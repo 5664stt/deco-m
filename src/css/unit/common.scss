@@ -1,0 +1,60 @@
+//------通用样式------
+
+$green: #4aab2d;//主色调-绿
+$orange: #ff9b54;//辅色-橙
+
+//字体
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: .348rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .0064rem;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 487451 */
+  src: url('//at.alicdn.com/t/font_487451_mlk9j69sw28adcxr.eot');
+  src: url('//at.alicdn.com/t/font_487451_mlk9j69sw28adcxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_487451_mlk9j69sw28adcxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_487451_mlk9j69sw28adcxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_487451_mlk9j69sw28adcxr.svg#iconfont') format('svg');
+}
+
+// pic 图片自动居中
+// - $width 居中的图片的父盒子 && 图片最大 的宽度
+// - $height 居中的图片的父盒子 && 图片最大 的高度
+@mixin pic ($width,$height){
+  width: $width;
+  height: $height;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  line-height: $height;
+  background: rgba(0,0,0,.025);
+  font-size: 0;
+  & > img {
+    width: auto;
+    height: auto;
+    max-width: $width;
+    max-height: $height;
+    vertical-align: middle;
+  }
+}
+@mixin pic-bg ($width,$height){
+  width: $width;
+  height: $height;
+  display: block;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//单行文本溢出点点点显示
+//△注意：需要使用该代码的容器有宽高
+@mixin text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

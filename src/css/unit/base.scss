@@ -1,0 +1,177 @@
+@import "common";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  //background: #fff;
+  color: #333;
+  font-size: .32rem;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //font-family: 'Microsoft YaHei', Arial, 'Hiragino Sans GB', Verdana, Helvetica, sans-serif, Tahoma, STHeiti;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  background: #eee;
+}
+* {
+  box-sizing: inherit;
+}
+
+td, th, caption {
+font-size: .32rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer
+}
+
+a:hover {
+  color: $green;
+  text-decoration: none
+}
+
+sup {
+  line-height: 0
+}
+
+img {
+  border: none
+}
+
+ol, ul, li {
+  list-style: none
+}
+
+input, select, button, textarea {
+  outline: none;
+  padding: 0;
+  border: 0 none;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+select {
+  -webkit-appearance: button;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+html {
+  overflow-y: auto;
+}
+
+iframe {
+  width: 100%;
+  border: 0 none;
+  overflow: hidden;
+  display: block;
+}
+
+//vue-swier Start
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: .256rem;
+  height: .256rem;
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  background: $green;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: .096rem;
+}
+//vue-swier End
+
+//loading Start
+.infinite-loading-container[data-v-fb2c869e] [class^=loading-] {
+  margin: 0 !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  font-size: 1rem !important;
+  line-height: 1rem !important;
+  &:before {
+    margin-top: -.08rem;
+    margin-left: -.08rem;
+    width: .16rem;
+    height: .16rem;
+  }
+
+}
+.infinite-loading-container[data-v-fb2c869e] > div:first-child {
+  position: relative;
+  height: 1rem;
+  padding: .32rem 0;
+  box-sizing: content-box;
+  &:after {
+    content: "正在加载...";
+    top: 50%;
+    color: #999;
+    height: .5rem;
+    right: .32rem;
+    font-size: .384rem;
+    position: absolute;
+    line-height: .5rem;
+    margin-top: -.25rem;
+  }
+}
+.infinite-status-prompt[data-v-fb2c869e] {
+  padding: 0 !important;
+}
+
+.infinite-loading-container .no-more{
+  color: #999;
+  padding: .5rem;
+  font-size: .448rem;
+}
+
+//loading 旋转的点
+.loading-circles[data-v-6e1fd88f] .circle-item {
+  width: .16rem !important;
+  height: .16rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:first-child {
+    margin-top: -0.464rem !important;
+    margin-left: -0.08rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(2) {
+    margin-top: -0.36rem !important;
+    margin-left: 0.2rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(3) {
+    margin-top: -0.08rem !important;
+    margin-left: 0.304rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(4) {
+    margin-top: 0.2rem !important;
+    margin-left: 0.2rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(5) {
+    margin-top: 0.304rem !important;
+    margin-left: -.08rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(6) {
+    margin-top: 0.2rem !important;
+    margin-left: -0.36rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:nth-child(7) {
+    margin-top: -0.08rem !important;
+    margin-left: -.464rem !important;
+}
+.loading-circles[data-v-6e1fd88f] .circle-item:last-child {
+    margin-top: -0.36rem !important;
+    margin-left: -0.36rem !important;
+}
+//loading End
